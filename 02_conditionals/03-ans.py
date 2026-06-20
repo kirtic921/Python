@@ -4,6 +4,11 @@
 score = input("Enter your marks:")
 iscore= int(score)
 
+
+if(iscore>=101):
+    print("Please check your score you just entered!")
+    exit()
+
 if(iscore>=90):
     grade='A'
 elif(iscore>=80 and iscore<=89):
