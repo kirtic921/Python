@@ -5,15 +5,27 @@ age=input("Enter your age: ")
 iage=int(age)
 day=input("Enter the day:")
 
-if(iage<18 and day!='Wednesday'):{
-    print("Ticket price is $8.")
-}
-elif(iage<18 and day=='Wednesday'):{
-    print("Ticket price is $6.")
-}
-elif(iage>=18 and day=='Wednesday'):{
-    print("Ticket price is $10.")
-}
-else:{
-    print("Ticket price is $12.")
-}
+# if(iage<18 and day!='Wednesday'):{
+#     print("Ticket price is $8.")
+# }
+# elif(iage<18 and day=='Wednesday'):{
+#     print("Ticket price is $6.")
+# }
+# elif(iage>=18 and day=='Wednesday'):{
+#     print("Ticket price is $10.")
+# }
+# else:{
+#     print("Ticket price is $12.")
+# }
+
+if(iage>18):
+    price=12
+else:
+    price=8
+
+if(day=='Wednesday'):
+    price-=2
+else:
+    price=price
+
+print("Ticket Fare is $", price)
