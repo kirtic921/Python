@@ -14,7 +14,11 @@ def fetch_random_user_data():
         raise EXCEPTION("Failed in fetching values.")
     
 def main():
-    t
+    try:
+        username, country = fetch_random_user_data()
+        print(f"Username: {username}, Country: {country}")
+    except Exception as e:
+        print(str(e))
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     main() 
